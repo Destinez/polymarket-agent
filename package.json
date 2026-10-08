@@ -1,0 +1,32 @@
+{
+  "name": "polymarket-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts start",
+    "review": "tsx src/index.ts review",
+    "stats": "tsx src/index.ts stats",
+    "build": "tsc",
+    "dev": "nodemon --exec tsx src/index.ts start"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.88.0",
+    "@polymarket/clob-client": "^5.8.1",
+    "@supabase/supabase-js": "^2.35.0",
+    "@tavily/core": "^0.3.7",
+    "axios": "^1.7.0",
+    "dotenv": "^16.0.0",
+    "inquirer": "^9.0.0",
+    "node-cron": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "@types/node-cron": "^3.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.5.0"
+  }
+}
